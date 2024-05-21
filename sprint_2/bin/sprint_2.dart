@@ -1,5 +1,3 @@
-import 'package:test/test.dart';
-
 void main() {
   String nome = 'Laranja';
   double peso = 100.2;
