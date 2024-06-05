@@ -46,7 +46,7 @@ String toString(String nome, double peso, int diasDesdeColheita,
   return frase;
 }
 
-mostrarMadura(String nome, int dias, {required String cor}) {
+void mostrarMadura(String nome, int dias, {required String cor}) {
   if (dias >= 30) {
     print('A $nome está madura.');
   } else {
