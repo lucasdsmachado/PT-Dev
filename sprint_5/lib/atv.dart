@@ -47,43 +47,41 @@ class ThreeColors extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
-        child: Row(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: _color1,
-                border: Border.all(color: Colors.black, width: 3),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              width: 100,
-              height: 150,
+      child: Row(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: _color1,
+              border: Border.all(color: Colors.black, width: 3),
+              borderRadius: BorderRadius.circular(10),
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: _color2,
-                border: Border.all(color: Colors.black, width: 3),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              width: 100,
-              height: 150,
-              child: const Icon(
-                Icons.supervisor_account_rounded,
-                color: Colors.black26,
-                size: 25,
-              ),
+            width: 100,
+            height: 150,
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: _color2,
+              border: Border.all(color: Colors.black, width: 3),
+              borderRadius: BorderRadius.circular(10),
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: _color3,
-                border: Border.all(color: Colors.black, width: 3),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              width: 100,
-              height: 150,
+            width: 100,
+            height: 150,
+            child: const Icon(
+              Icons.supervisor_account_rounded,
+              color: Colors.black26,
+              size: 25,
             ),
-          ],
-        ),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: _color3,
+              border: Border.all(color: Colors.black, width: 3),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            width: 100,
+            height: 150,
+          ),
+        ],
       ),
     );
   }
